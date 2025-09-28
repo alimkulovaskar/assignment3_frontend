@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #1a0033; /* тёмно-фиолетово-синий */
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #66a3ff; /* светло-синие ссылки */
+  margin-left: 20px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  background: #3d007a; /* ярко-фиолетовый при наведении */
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1a0033, #3d007a); /* тёмно-фиолетовый градиент */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background: #66a3ff; /* синие кнопки */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.hero .btn:hover {
+  background: #3d007a; /* фиолетовый при наведении */
+  color: #fff;
+}
+
+/* Projects (Grid) */
+.projects {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 15px;
+}
+
+.project-card p {
+  margin: 0 15px 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+/* About (Flex) */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about div {
+  max-width: 600px;
+}
+
+/* Footer */
+.footer {
+  background: #1a0033; /* тёмно-фиолетово-синий */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}

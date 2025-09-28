@@ -1,0 +1,97 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+}
+
+/* Navbar (тот же стиль, что в Task 0) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1a0033; /* тёмно-фиолетово-синий фон */
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #66a3ff; /* светло-синие ссылки */
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.2s;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  background: #3d007a; /* ярко-фиолетовый при наведении */
+  color: #fff;
+}
+
+/* Cards layout */
+.container {
+  padding: 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 0; /* все карточки равной ширины */
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px;
+}
+
+.card p {
+  margin: 0 15px 15px;
+  flex-grow: 1;
+}
+
+.card .btn {
+  margin: 15px;
+  align-self: flex-start;
+  background: #1a0033; /* тёмно-фиолетово-синий */
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.card .btn:hover {
+  background: #3d007a; /* ярко-фиолетовый при наведении */
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}

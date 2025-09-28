@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #ddd; /* светлый текст */
+}
+
+header, footer {
+  background: #1a0033; /* тёмно-фиолетово-синий */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 12px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #0044cc;              /* глубокий синий */
+  padding: 8px 14px;
+  border: 2px solid #0044cc;   /* рамка синяя */
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  background: #3d007a; /* ярче фиолетовый при наведении */
+  color: #fff;
+  border-color: #3d007a;
+}

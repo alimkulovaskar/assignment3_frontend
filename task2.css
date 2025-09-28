@@ -1,0 +1,74 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1a0033; /* тёмно-фиолетово-синий */
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #66a3ff; /* светло-синие ссылки */
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.2s;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  background: #3d007a; /* ярко-фиолетовый при наведении */
+  color: #fff;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 1fr auto;
+  min-height: calc(100vh - 70px); /* минус высота navbar */
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #e8eef7;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.main {
+  grid-area: main;
+  background: #fff;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background: #1a0033; /* тёмно-фиолетово-синий */
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
